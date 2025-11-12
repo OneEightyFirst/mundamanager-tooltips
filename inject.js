@@ -1,4 +1,6 @@
 (async () => {
+  console.log('🎲 Munda Manager Tooltips: Loading...');
+  
   // Configuration
   const RULES_URL = 'https://OneEightyFirst.github.io/mundamanager-tooltips/rules.json';
   const CACHE_KEY = 'munda_tooltips_rules';
@@ -6,7 +8,7 @@
 
   // Prevent multiple injections
   if (window.mundaTooltipsActive) {
-    console.log('Munda Tooltips already active');
+    console.log('⚠️ Munda Tooltips already active on this page');
     return;
   }
   window.mundaTooltipsActive = true;
@@ -289,8 +291,9 @@
     subtree: true
   });
 
-  console.log('✓ Munda Tooltips active');
-  console.log(`  Loaded ${Object.keys(rules).length} rules`);
-  console.log(`  Device mode: ${isTouchDevice ? 'touch' : 'desktop'}`);
+  console.log('%c✓ Munda Manager Tooltips Active!', 'color: #4a90e2; font-weight: bold; font-size: 14px;');
+  console.log(`📖 Loaded ${Object.keys(rules).length} rules`);
+  console.log(`📱 Device mode: ${isTouchDevice ? 'touch' : 'desktop'}`);
+  console.log('💡 Hover (desktop) or tap (mobile) on rule names to see definitions');
 })();
 
