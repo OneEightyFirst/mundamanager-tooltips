@@ -94,52 +94,58 @@
   
   const modalContent = document.createElement('div');
   modalContent.style.cssText = `
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #e8e8e8;
+    background: #181818;
+    color: #ffffff;
     padding: 24px;
-    border-radius: 12px;
+    padding-top: 16px;
+    border-radius: 8px;
     max-width: 400px;
     width: 100%;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    border: 1px solid #333;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
   `;
+  
+  const modalClose = document.createElement('button');
+  modalClose.textContent = '×';
+  modalClose.setAttribute('aria-label', 'Close');
+  modalClose.style.cssText = `
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    color: #999;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s ease;
+  `;
+  modalClose.onmouseover = () => modalClose.style.color = '#fff';
+  modalClose.onmouseout = () => modalClose.style.color = '#999';
   
   const modalTitle = document.createElement('h3');
   modalTitle.style.cssText = `
     margin: 0 0 12px 0;
     font-size: 18px;
     font-weight: 600;
-    color: #ffd700;
+    color: #ffffff;
+    padding-right: 32px;
   `;
   
   const modalText = document.createElement('p');
   modalText.style.cssText = `
-    margin: 0 0 16px 0;
+    margin: 0;
     font-size: 15px;
     line-height: 1.6;
+    color: #e0e0e0;
   `;
   
-  const modalClose = document.createElement('button');
-  modalClose.textContent = 'Close';
-  modalClose.style.cssText = `
-    background: #4a90e2;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.2s ease;
-  `;
-  modalClose.onmouseover = () => modalClose.style.background = '#357abd';
-  modalClose.onmouseout = () => modalClose.style.background = '#4a90e2';
-  
+  modalContent.appendChild(modalClose);
   modalContent.appendChild(modalTitle);
   modalContent.appendChild(modalText);
-  modalContent.appendChild(modalClose);
   modal.appendChild(modalContent);
   document.body.appendChild(modal);
 
