@@ -216,8 +216,6 @@
         tooltip.style.display = 'none';
     }
 
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
     function wrapRuleText(node) {
         if (!node || processedNodes.has(node)) return;
         if (node.nodeType !== Node.TEXT_NODE) return;
@@ -240,7 +238,7 @@
             if (regex.test(text)) {
                 hasMatch = true;
                 newHTML = newHTML.replace(regex, (match) => {
-                    return `<span class="munda-rule-tooltip" data-rule="${ruleName}" style="border-bottom: 1px dotted #888; cursor: help;">${match}</span>`;
+                    return `<span class="munda-rule-tooltip" data-rule="${ruleName}" style="border-bottom: 1px dotted #888; cursor: pointer;">${match}</span>`;
                 });
             }
         }
@@ -255,22 +253,10 @@
                 const ruleName = span.getAttribute('data-rule');
                 const ruleText = rules[ruleName];
 
-                if (!isTouchDevice) {
-                    span.addEventListener('mouseenter', (e) => {
-                        showTooltip(ruleText, e.clientX, e.clientY);
-                    });
-                    span.addEventListener('mousemove', (e) => {
-                        showTooltip(ruleText, e.clientX, e.clientY);
-                    });
-                    span.addEventListener('mouseleave', hideTooltip);
-                }
-
                 span.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    if (isTouchDevice) {
-                        showModal(ruleName, ruleText);
-                    }
+                    showModal(ruleName, ruleText);
                 });
             });
         }
@@ -310,7 +296,6 @@
 
     console.log('%c✓ Munda Manager Tooltips Active!', 'color: #4a90e2; font-weight: bold; font-size: 14px;');
     console.log(`📖 Loaded ${Object.keys(rules).length} rules`);
-    console.log(`📱 Device mode: ${isTouchDevice ? 'touch' : 'desktop'}`);
-    console.log('💡 Hover (desktop) or tap (mobile) on rule names to see definitions');
+    console.log('💡 Click on rule names to see definitions');
 })();
 

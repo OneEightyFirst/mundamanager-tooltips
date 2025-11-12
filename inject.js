@@ -192,9 +192,6 @@
     tooltip.style.display = 'none';
   }
 
-  // Detect if device is touch-enabled
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
   // Find and wrap rule text
   function wrapRuleText(node) {
     if (!node || processedNodes.has(node)) return;
@@ -220,7 +217,7 @@
       if (regex.test(text)) {
         hasMatch = true;
         newHTML = newHTML.replace(regex, (match) => {
-          return `<span class="munda-rule-tooltip" data-rule="${ruleName}" style="border-bottom: 1px dotted #888; cursor: help;">${match}</span>`;
+          return `<span class="munda-rule-tooltip" data-rule="${ruleName}" style="border-bottom: 1px dotted #888; cursor: pointer;">${match}</span>`;
         });
       }
     }
@@ -231,29 +228,15 @@
       parent.replaceChild(wrapper, node);
       processedNodes.add(wrapper);
       
-      // Attach events to new rule spans
+      // Attach click event to show modal (works for both desktop and mobile)
       wrapper.querySelectorAll('.munda-rule-tooltip').forEach(span => {
         const ruleName = span.getAttribute('data-rule');
         const ruleText = rules[ruleName];
         
-        if (!isTouchDevice) {
-          // Desktop: hover
-          span.addEventListener('mouseenter', (e) => {
-            showTooltip(ruleText, e.clientX, e.clientY);
-          });
-          span.addEventListener('mousemove', (e) => {
-            showTooltip(ruleText, e.clientX, e.clientY);
-          });
-          span.addEventListener('mouseleave', hideTooltip);
-        }
-        
-        // Mobile: tap (works for both touch and desktop)
         span.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
-          if (isTouchDevice) {
-            showModal(ruleName, ruleText);
-          }
+          showModal(ruleName, ruleText);
         });
       });
     }
@@ -299,7 +282,6 @@
 
   console.log('%c✓ Munda Manager Tooltips Active!', 'color: #4a90e2; font-weight: bold; font-size: 14px;');
   console.log(`📖 Loaded ${Object.keys(rules).length} rules`);
-  console.log(`📱 Device mode: ${isTouchDevice ? 'touch' : 'desktop'}`);
-  console.log('💡 Hover (desktop) or tap (mobile) on rule names to see definitions');
+  console.log('💡 Click on rule names to see definitions');
 })();
 
