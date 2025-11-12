@@ -266,7 +266,7 @@
       
       <div class="bookmarklet-box">
         <p><strong>📌 Drag this to your bookmarks bar:</strong></p>
-        <a href="javascript:(async()=>{const s=document.createElement('script');s.src='https://YOUR-USERNAME.github.io/munda-tooltips/inject.js';document.body.appendChild(s);})();" class="bookmarklet-link">MM Rules+</a>
+        <a href="javascript:(async()=>{console.log('🔖 Bookmarklet clicked, loading Munda Tooltips...');const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';s.onerror=()=>console.error('❌ Failed to load inject.js - is GitHub Pages enabled?');s.onload=()=>console.log('📥 Script loaded successfully');document.body.appendChild(s);})();" class="bookmarklet-link">MM Rules+</a>
         <p style="margin-top: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.8);">
           <em>Don't forget to replace YOUR-USERNAME with your GitHub username!</em>
         </p>
@@ -286,7 +286,7 @@
     
     <div class="code-block">
       <button class="copy-btn" onclick="copyBookmarklet()">Copy</button>
-      <pre id="bookmarklet-code">javascript:(async()=>{const s=document.createElement('script');s.src='https://YOUR-USERNAME.github.io/munda-tooltips/inject.js';document.body.appendChild(s);})();</pre>
+      <pre id="bookmarklet-code">javascript:(async()=>{console.log('🔖 Bookmarklet clicked, loading Munda Tooltips...');const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';s.onerror=()=>console.error('❌ Failed to load inject.js - is GitHub Pages enabled?');s.onload=()=>console.log('📥 Script loaded successfully');document.body.appendChild(s);})();</pre>
     </div>
     
     <h3>Mobile Safari (iOS)</h3>

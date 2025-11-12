@@ -3,7 +3,7 @@ Munda Manager Rules+ Bookmarklet
 
 Copy and paste this code as the URL when creating your bookmark:
 
-javascript:(async()=>{const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';document.body.appendChild(s);})();
+javascript:(async()=>{console.log('🔖 Bookmarklet clicked, loading Munda Tooltips...');const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';s.onerror=()=>console.error('❌ Failed to load inject.js - is GitHub Pages enabled?');s.onload=()=>console.log('📥 Script loaded successfully');document.body.appendChild(s);})();
 
 
 SETUP INSTRUCTIONS:
