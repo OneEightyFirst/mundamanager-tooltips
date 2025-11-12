@@ -1,0 +1,45 @@
+Munda Manager Rules+ Bookmarklet
+=================================
+
+Copy and paste this code as the URL when creating your bookmark:
+
+javascript:(async()=>{const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';document.body.appendChild(s);})();
+
+
+SETUP INSTRUCTIONS:
+-------------------
+
+Desktop (Chrome, Firefox, Safari, Edge):
+1. Right-click your bookmarks bar → "Add page" or "New bookmark"
+2. Name: MM Rules+
+3. URL: Paste the code above
+4. Save
+
+Mobile Safari (iOS):
+1. Bookmark any page (Share → Add Bookmark)
+2. Open Bookmarks and tap Edit on your bookmark
+3. Change name to: MM Rules+
+4. Replace URL with the code above
+5. Save
+
+Mobile Chrome (Android):
+1. Tap ⋮ → ★ to bookmark any page
+2. Go to Bookmarks (⋮ → Bookmarks)
+3. Long-press your bookmark → Edit
+4. Change name to: MM Rules+
+5. Replace URL with the code above
+6. Save
+
+
+USAGE:
+------
+1. Visit https://mundamanager.app/
+2. Click/tap your "MM Rules+" bookmark
+3. Rule names will appear with dotted underlines
+4. Hover (desktop) or tap (mobile) to see definitions
+
+
+Your files will be accessible at:
+- https://OneEightyFirst.github.io/mundamanager-tooltips/rules.json
+- https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js
+

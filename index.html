@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munda Manager Tooltips - Setup Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #e8e8e8;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(26, 26, 46, 0.8);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+    
+    h2 {
+      color: #ffd700;
+      margin: 30px 0 15px 0;
+      font-size: 1.8rem;
+    }
+    
+    h3 {
+      color: #4a90e2;
+      margin: 20px 0 10px 0;
+      font-size: 1.3rem;
+    }
+    
+    p, li {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+    
+    ul, ol {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+    
+    code {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.9em;
+      color: #4a90e2;
+    }
+    
+    .code-block {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 15px 0;
+      border-left: 4px solid #4a90e2;
+      position: relative;
+    }
+    
+    .code-block pre {
+      margin: 0;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: #e8e8e8;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background 0.2s;
+    }
+    
+    .copy-btn:hover {
+      background: #357abd;
+    }
+    
+    .bookmarklet-box {
+      background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .bookmarklet-link {
+      display: inline-block;
+      background: white;
+      color: #1a1a2e;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      transition: transform 0.2s;
+      cursor: move;
+    }
+    
+    .bookmarklet-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .alert {
+      background: rgba(255, 193, 7, 0.2);
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .success {
+      background: rgba(76, 175, 80, 0.2);
+      border-left: 4px solid #4caf50;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .step {
+      background: rgba(74, 144, 226, 0.1);
+      border: 1px solid rgba(74, 144, 226, 0.3);
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    
+    .step-number {
+      display: inline-block;
+      background: #4a90e2;
+      color: white;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .feature {
+      background: rgba(74, 144, 226, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid rgba(74, 144, 226, 0.2);
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 Munda Manager Tooltips</h1>
+    <p class="subtitle">Interactive rule tooltips for mundamanager.app</p>
+    
+    <div class="success">
+      <strong>✨ You're all set!</strong> This page will help you deploy and use the tooltips bookmarklet.
+    </div>
+    
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">📖</div>
+        <strong>Hover Tooltips</strong>
+        <p>Desktop users see instant definitions on hover</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <strong>Mobile Ready</strong>
+        <p>Tap for clean modal popups on touch devices</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <strong>Lightning Fast</strong>
+        <p>Caches rules locally for instant loading</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔄</div>
+        <strong>Dynamic Content</strong>
+        <p>Works with lazy-loaded page elements</p>
+      </div>
+    </div>
+    
+    <h2>Quick Start</h2>
+    
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>Edit inject.js</strong>
+      <p>Open <code>inject.js</code> and replace <code>YOUR-GITHUB-USERNAME</code> with your actual GitHub username on line 3.</p>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>Create GitHub Repo</strong>
+      <p>Create a public repository named <code>munda-tooltips</code> and upload <code>rules.json</code> and <code>inject.js</code>.</p>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">3</span>
+      <strong>Enable GitHub Pages</strong>
+      <p>Go to Settings → Pages → Deploy from branch <code>main</code> / <code>root</code></p>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">4</span>
+      <strong>Add Bookmarklet</strong>
+      <p>Drag the button below to your bookmarks bar (or copy the code and create a bookmark manually).</p>
+      
+      <div class="bookmarklet-box">
+        <p><strong>📌 Drag this to your bookmarks bar:</strong></p>
+        <a href="javascript:(async()=>{const s=document.createElement('script');s.src='https://YOUR-USERNAME.github.io/munda-tooltips/inject.js';document.body.appendChild(s);})();" class="bookmarklet-link">MM Rules+</a>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.8);">
+          <em>Don't forget to replace YOUR-USERNAME with your GitHub username!</em>
+        </p>
+      </div>
+    </div>
+    
+    <h2>Manual Bookmarklet Setup</h2>
+    
+    <p>If drag-and-drop doesn't work, create a bookmark manually:</p>
+    
+    <h3>Desktop Browsers</h3>
+    <ol>
+      <li>Right-click your bookmarks bar → <strong>Add page</strong> or <strong>New bookmark</strong></li>
+      <li>Name: <code>MM Rules+</code></li>
+      <li>URL: Copy and paste the code below (replace <code>YOUR-USERNAME</code>):</li>
+    </ol>
+    
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyBookmarklet()">Copy</button>
+      <pre id="bookmarklet-code">javascript:(async()=>{const s=document.createElement('script');s.src='https://YOUR-USERNAME.github.io/munda-tooltips/inject.js';document.body.appendChild(s);})();</pre>
+    </div>
+    
+    <h3>Mobile Safari (iOS)</h3>
+    <ol>
+      <li>Bookmark any page (Share → Add Bookmark)</li>
+      <li>Open Bookmarks and tap Edit on your new bookmark</li>
+      <li>Change name to <code>MM Rules+</code></li>
+      <li>Replace the URL with the bookmarklet code above</li>
+      <li>Save</li>
+    </ol>
+    
+    <h3>Mobile Chrome (Android)</h3>
+    <ol>
+      <li>Tap ⋮ → ★ to bookmark any page</li>
+      <li>Go to Bookmarks (⋮ → Bookmarks)</li>
+      <li>Long-press your bookmark → Edit</li>
+      <li>Change name to <code>MM Rules+</code></li>
+      <li>Replace the URL with the bookmarklet code above</li>
+      <li>Save</li>
+    </ol>
+    
+    <h2>Usage</h2>
+    
+    <ol>
+      <li>Open <a href="https://mundamanager.app/" target="_blank">mundamanager.app</a></li>
+      <li>Click/tap your <code>MM Rules+</code> bookmark</li>
+      <li>Rule names will now have dotted underlines</li>
+      <li><strong>Desktop:</strong> Hover over any rule to see its definition</li>
+      <li><strong>Mobile:</strong> Tap any rule to see a popup</li>
+    </ol>
+    
+    <div class="alert">
+      <strong>⚠️ Note:</strong> You need to click the bookmarklet each time you visit mundamanager.app. It doesn't persist across page loads (by design — bookmarklets are temporary).
+    </div>
+    
+    <h2>Updating Rules</h2>
+    
+    <p>To add or modify rules:</p>
+    <ol>
+      <li>Edit <code>rules.json</code> in your GitHub repo</li>
+      <li>Commit your changes</li>
+      <li>GitHub Pages will update automatically</li>
+      <li>Users will see changes within 24 hours (or sooner if they clear cache)</li>
+    </ol>
+    
+    <div class="code-block">
+      <pre>{
+  "New Rule Name": "Description of what this rule does.",
+  "Another Rule": "Another description here."
+}</pre>
+    </div>
+    
+    <h2>Troubleshooting</h2>
+    
+    <h3>Bookmarklet doesn't run</h3>
+    <ul>
+      <li>Make sure you're on an <code>https://</code> site (won't work on local files)</li>
+      <li>Check that GitHub Pages is enabled and your files are accessible</li>
+      <li>Verify you replaced <code>YOUR-USERNAME</code> in the bookmarklet code</li>
+    </ul>
+    
+    <h3>No rules appear</h3>
+    <ul>
+      <li>Open browser console (F12) and check for errors</li>
+      <li>Verify <code>inject.js</code> has your correct GitHub username in <code>RULES_URL</code></li>
+      <li>Ensure <code>rules.json</code> is valid JSON (use <a href="https://jsonlint.com/" target="_blank">jsonlint.com</a>)</li>
+    </ul>
+    
+    <h3>Rules match wrong text</h3>
+    <ul>
+      <li>The script uses word boundaries (<code>\b</code>) to prevent partial matches</li>
+      <li>If common words like "Power" or "Blast" are matching too broadly, consider making rule names more specific</li>
+    </ul>
+    
+    <h2>Technical Details</h2>
+    
+    <h3>How It Works</h3>
+    <ol>
+      <li>Bookmarklet injects <code>inject.js</code> into the current page</li>
+      <li>Script fetches <code>rules.json</code> from GitHub Pages</li>
+      <li>Rules are cached in localStorage for 24 hours</li>
+      <li>DOM is scanned for text matching rule names</li>
+      <li>Matching text is wrapped with interactive elements</li>
+      <li>MutationObserver watches for new content and processes it automatically</li>
+    </ol>
+    
+    <h3>Browser Compatibility</h3>
+    <ul>
+      <li>✅ Chrome, Edge, Brave (desktop & mobile)</li>
+      <li>✅ Firefox (desktop & mobile)</li>
+      <li>✅ Safari (desktop & iOS)</li>
+      <li>✅ Any modern browser with ES6+ support</li>
+    </ul>
+    
+    <h2>Contributing</h2>
+    
+    <p>Want to improve the tooltips? Here are some ideas:</p>
+    <ul>
+      <li>Add more Necromunda rules to <code>rules.json</code></li>
+      <li>Improve the styling in <code>inject.js</code></li>
+      <li>Add support for multiple languages</li>
+      <li>Create themed tooltips (Imperial, Chaos, etc.)</li>
+    </ul>
+    
+    <p style="margin-top: 40px; text-align: center; color: #888; font-size: 0.9rem;">
+      Made for the Necromunda community • <a href="https://github.com" target="_blank">View on GitHub</a>
+    </p>
+  </div>
+  
+  <script>
+    function copyBookmarklet() {
+      const code = document.getElementById('bookmarklet-code').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+      });
+    }
+  </script>
+</body>
+</html>
+
