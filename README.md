@@ -1,261 +1,54 @@
-# Munda Manager Rule Tooltips 🎲
+# MundaMate
 
-A lightweight tooltip system that adds hover/tap definitions for Necromunda rules when viewing cards on [Munda Manager](https://www.mundamanager.com/).
+N26 Necromunda rule tooltips for [Munda Manager](https://www.mundamanager.com/). Tap a skill, trait, special rule or wyrd power on a fighter card and you get the rule text, with its book and page.
 
-**✨ Features:**
-- 📖 Hover over rule names to see instant definitions (desktop)
-- 📱 Tap rule names for clean modal popups (mobile)
-- 🔄 Works with dynamically loaded content
-- 🚀 Zero build step — runs via bookmarklet or Tampermonkey
-- 🔒 100% client-side — no server required
-
----
-
-## 📦 What's Included
+This folder is the **only** source. Every target builds from it.
 
 ```
-mundamanager-plugin/
-├── rules.json                    # 50+ Necromunda rule definitions
-├── inject.js                     # Tooltip injection script
-├── bookmarklet.txt              # Bookmarklet code for easy copy-paste
-├── index.html                   # Landing page with setup instructions
-├── demo.html                    # Standalone demo page
-├── README.md                    # This file
-└── tampermonkey/
-    └── munda-tooltips.user.js   # Tampermonkey userscript (auto-runs!)
+data/rules.json         rule name -> text (the catalog)
+data/house-rules.json   house / category / source metadata (popup filters)
+data/journal-index.json page index for the Escher and Goliath journals
+src/inject.js           the tooltip script (rules are injected at build time)
+chrome-extension/       popup + manifest for the desktop extension
+android/                MundaMate Android app (WebView wrapper, com.oneeightyfirst.mundamate)
+web/index.html          landing page at michaelfwells.com/munda/
+scripts/build.py        builds dist/web and dist/chrome-extension
+tests/browser.test.js   Playwright check of the built files
+tools/special-rules-extraction/  how the Oct 2026 special-rules batch was pulled from the PDFs
 ```
 
----
+Edit `data/` or `src/`, never `dist/`, which gets regenerated.
 
-## 🚀 Installation Methods
+## Build and ship
 
-### Method 1: Tampermonkey (Recommended for Desktop + Firefox Mobile)
-
-**Best for:** Desktop browsers, Firefox Mobile, Kiwi Browser
-
-**⚠️ Note:** Chrome on Android doesn't support extensions. Use Firefox or Kiwi Browser instead.
-
-1. **Install Tampermonkey**:
-   - **Desktop Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-   - **Desktop Firefox**: [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
-   - **Firefox Mobile**: Open Firefox → Menu → Add-ons → Search "Tampermonkey"
-   - **Kiwi Browser**: Use Chrome Web Store link above
-
-2. **Install the script**:
-   - Open: https://oneeightyfirst.github.io/mundamanager-tooltips/tampermonkey/munda-tooltips.user.js
-   - Tampermonkey will detect it and prompt to install
-   - Click "Install"
-
-3. **Use it**:
-   - Visit https://www.mundamanager.com/
-   - Tooltips appear automatically! ✅
-
-### Method 2: Bookmarklet (Desktop Browsers)
-
-**Best for:** Desktop Chrome, Firefox, Safari, Edge
-
-1. **Create a bookmark**:
-   - Right-click bookmarks bar → "Add page" or "New bookmark"
-   - Name: `MM Rules+`
-   - URL: Copy from `bookmarklet.txt` or use:
-
-```javascript
-javascript:(async()=>{console.log('🔖 Bookmarklet clicked, loading Munda Tooltips...');const s=document.createElement('script');s.src='https://OneEightyFirst.github.io/mundamanager-tooltips/inject.js';s.onerror=()=>console.error('❌ Failed to load inject.js - is GitHub Pages enabled?');s.onload=()=>console.log('📥 Script loaded successfully');document.body.appendChild(s);})();
+```sh
+python3 scripts/build.py              # writes dist/web and dist/chrome-extension
+node tests/browser.test.js            # needs: npm i -D playwright
 ```
 
-2. **Use it**:
-   - Visit https://www.mundamanager.com/
-   - Click your `MM Rules+` bookmark
-   - Tooltips appear! ✅
+**Bookmarklet (michaelfwells.com/munda/):** upload `dist/web/inject.js` (and `index.html` if changed) to `/home/michjfbk/public_html/munda/` over SFTP (`mysite` alias). Back up the live file first.
 
-### Method 3: Firefox Mobile Bookmarklet
+**Chrome:** `chrome://extensions` → Developer mode → Load unpacked → `dist/chrome-extension/`. After a rebuild, hit reload on the extension.
 
-**Firefox Mobile DOES support bookmarklets properly!**
+**Android:** the app bundles `src/inject.js` + `data/rules.json` at build time, so it only changes when you rebuild and reinstall:
 
-1. Install Firefox from Play Store
-2. Create bookmark with the bookmarklet code above
-3. Navigate to mundamanager.com
-4. Tap the bookmark - it executes on the page! ✅
-
-### Method 4: Kiwi Browser (Alternative for Android)
-
-Kiwi Browser is Chrome-based but supports bookmarklets:
-
-1. Install Kiwi Browser from Play Store
-2. Add bookmarklet (same as desktop)
-3. Works perfectly! ✅
-
----
-
-## ⚠️ Chrome Android Limitations
-
-**Chrome on Android has TWO issues:**
-1. ❌ **No bookmarklet support** - clicking them opens a new tab
-2. ❌ **No extension support** - can't install Tampermonkey
-
-**Android Solutions:**
-- ✅ **Firefox Mobile** - Supports both bookmarklets AND Tampermonkey!
-- ✅ **Kiwi Browser** - Supports both bookmarklets AND Tampermonkey!
-
----
-
-## 📝 Updating Rules
-
-To add or edit rules, update `rules.json` in the GitHub repo:
-
-```json
-{
-  "New Rule": "Description goes here.",
-  "Another Rule": "Another description."
-}
+```sh
+cd android
+./gradlew assembleDebug               # Java 17+, Android SDK (sdk.dir in local.properties or ANDROID_HOME)
+adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Commit and push - GitHub Pages will update automatically!
+Or copy the APK to the phone and open it. It installs over the existing app and keeps your Munda Manager login. Bump `versionCode`/`versionName` in `android/app/build.gradle` each release.
 
----
+## Rule sources
 
-## 🎨 How It Works
+N26 only: core rulebook, Gangs of the Underhive, Gangs of the Outlands, Most Wanted, the Escher (House of Blades) and Goliath (House of Chains) journals, and the September 2026 FAQ and errata, which wins when it changes a rule. The PDFs live in `Projects/Necromunda Rules/00 - Current N26 rules (use these)/`.
 
-1. **Bookmarklet**: Injects `inject.js` from GitHub Pages into the current page
-2. **Tampermonkey**: Auto-runs the script every time you visit mundamanager.com
-3. **Script**: 
-   - Fetches `rules.json` (bookmarklet) or has rules embedded (Tampermonkey)
-   - Scans the DOM for rule names
-   - Wraps matches with interactive spans
-   - Adds hover tooltips (desktop) or tap modals (mobile)
-   - Uses MutationObserver to handle dynamic content
+Entries added in 1.3.0 are verbatim from the books, with `(Source: book, PDF p. N)` under each. When the same rule name appears on several fighters with different wording, every version is listed. Territories, side jobs, alliances and gang-building rules aren't in the catalog on purpose.
 
----
+## Versions
 
-## 🛠️ Troubleshooting
-
-### Bookmarklet doesn't run
-
-**Desktop:**
-- Make sure you're on `https://` (bookmarklets may not work on `http://`)
-- Check browser console (F12) for errors
-- Verify GitHub Pages is enabled
-
-**Mobile Chrome:**
-- Bookmarklets don't work in Chrome Android - use Tampermonkey or Firefox instead
-
-### No tooltips appear
-
-1. Open browser console (F12 on desktop)
-2. Look for: `✓ Munda Manager Tooltips Active!`
-3. If you see errors, check that:
-   - GitHub Pages is serving the files
-   - You're on www.mundamanager.com (not a different domain)
-   - JavaScript is enabled
-
-### Rules not matching
-
-- Rules use case-insensitive matching with word boundaries
-- "Blast" won't match "Blaster" 
-- Special characters must be exact: "Rapid Fire (1)"
-- Check spelling in `rules.json`
-
----
-
-## 📊 Browser Compatibility
-
-| Browser | Desktop Bookmarklet | Mobile Bookmarklet | Desktop Tampermonkey | Mobile Tampermonkey |
-|---------|-------------------|-------------------|---------------------|---------------------|
-| **Chrome** | ✅ Yes | ❌ No | ✅ Yes | ❌ No extensions |
-| **Firefox** | ✅ Yes | ✅ Yes! | ✅ Yes | ✅ Yes! |
-| **Safari** | ✅ Yes | ⚠️ Limited | ⚠️ Limited | ❌ No |
-| **Edge** | ✅ Yes | ❌ No | ✅ Yes | ❌ No |
-| **Kiwi** | N/A | ✅ Yes | N/A | ✅ Yes |
-
----
-
-## 🎯 Why Not a Native App?
-
-We originally tried building a Capacitor/React Native app, but discovered:
-
-❌ **Munda Manager blocks iframe embedding** (`X-Frame-Options: deny`)  
-❌ Complex workarounds needed  
-❌ App store approval required  
-❌ Must update entire app for rule changes  
-
-The bookmarklet/Tampermonkey approach is actually **better**:
-
-✅ Works directly on mundamanager.com  
-✅ No iframe restrictions  
-✅ Instant updates via GitHub Pages  
-✅ Cross-platform (desktop + mobile)  
-✅ No installation friction  
-✅ No app store approval needed  
-
----
-
-## 🤝 Contributing
-
-Want to add more rules?
-
-1. Fork this repo
-2. Edit `rules.json`
-3. Submit a pull request
-
-Common rules to add:
-- Gang-specific rules
-- Scenario rules  
-- Vehicle rules
-- Campaign rules
-- House-specific abilities
-
----
-
-## 📄 Files Overview
-
-### `rules.json`
-Contains all rule definitions. Format:
-```json
-{
-  "Rule Name": "Description text"
-}
-```
-
-### `inject.js`
-Main script that:
-- Fetches rules from GitHub Pages
-- Caches in localStorage (24 hours)
-- Scans and wraps rule text
-- Handles tooltips and modals
-- Monitors for dynamic content
-
-### `bookmarklet.txt`
-Ready-to-copy bookmarklet code with error handling and logging.
-
-### `tampermonkey/munda-tooltips.user.js`
-Tampermonkey userscript with:
-- Embedded rules (no network request)
-- Auto-runs on mundamanager.com
-- Same tooltip functionality as bookmarklet
-
-### `index.html`
-Beautiful landing page with:
-- Drag-and-drop bookmarklet installation
-- Mobile setup instructions
-- Troubleshooting guide
-
-### `demo.html`
-Standalone demo page showing tooltips in action without needing to visit mundamanager.com.
-
----
-
-## 🔗 Links
-
-- **GitHub Repo**: https://github.com/OneEightyFirst/mundamanager-tooltips
-- **GitHub Pages**: https://oneeightyfirst.github.io/mundamanager-tooltips/
-- **Munda Manager**: https://www.mundamanager.com/
-
----
-
-## 📜 License
-
-MIT License - Free to use and modify.
-
----
-
-**Made with ⚔️ for the Necromunda community**
+- 1.3.0 / Android 1.0.4 (Oct 2026): consolidated into this repo; 350 rules (added 166 fighter/gang special rules and wyrd powers, including Poison Blood, Nimble, Furious Charge, Combat Chems Stash, Counter-charge, Leash Range); FAQ errata for Bodyguard and Extra Arm.
+- 1.2.0 (Oct 19 2026): bookmarklet rebuilt on 184 N26 rules, searchable "Rules · N26" library.
+- 1.1.1 (Sep 7 2026): Chrome popup crash fix, weapon profile tables.
+- Android 1.0.3 (Aug 15 2026): first WebView wrapper build.

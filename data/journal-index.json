@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "indexedOn": "2026-10-11",
+  "scope": "Navigation index only. The source PDFs remain authoritative for wording, profiles, tables and values.",
+  "journals": {
+    "Escher": {
+      "title": "Underhive Journal - Escher: The House of Blades",
+      "file": "Necromunda_Skirmish_journal_Esher_2026.pdf",
+      "pdfPages": 52,
+      "paginationNote": "Printed pages 2-48 correspond to PDF pages 4-50.",
+      "sections": [
+        {"name": "House Escher", "printedPages": "2-25", "pdfPages": "4-27"},
+        {"name": "Escher History", "printedPages": "4-8", "pdfPages": "6-10"},
+        {"name": "The Aranthian Succession", "printedPages": "9", "pdfPages": "11"},
+        {"name": "House Structure", "printedPages": "10-11", "pdfPages": "12-13"},
+        {"name": "Venomous Hues", "printedPages": "12-13", "pdfPages": "14-15"},
+        {"name": "House Escher Timeline", "printedPages": "14-15", "pdfPages": "16-17"},
+        {"name": "Clan Holdings", "printedPages": "16-17", "pdfPages": "18-19"},
+        {"name": "Gangs of Legend", "printedPages": "18-25", "pdfPages": "20-27"},
+        {"name": "Additional Gang Lists & Equipment", "printedPages": "26-35", "pdfPages": "28-37"},
+        {"name": "Wyld Hunts", "printedPages": "28-31", "pdfPages": "30-33"},
+        {"name": "Chymist Cults", "printedPages": "32-35", "pdfPages": "34-37"},
+        {"name": "Fighter Profiles", "printedPages": "36-39", "pdfPages": "38-41"},
+        {"name": "Escher Chem-Alchemy", "printedPages": "40-41", "pdfPages": "42-43"},
+        {"name": "House Escher Gang Tactics", "printedPages": "42", "pdfPages": "44"},
+        {"name": "Finesse Skills", "printedPages": "43", "pdfPages": "45"},
+        {"name": "Escher Territories", "printedPages": "44-45", "pdfPages": "46-47"},
+        {"name": "Escher Side Jobs", "printedPages": "46", "pdfPages": "48"},
+        {"name": "Equipment Reference", "printedPages": "47-48", "pdfPages": "49-50"}
+      ],
+      "namedEntries": {
+        "variantRules": ["Sure-footed", "Deadly Poisons", "Rites of the Moraegan", "Chem-alchemy Adept"],
+        "chemAlchemy": ["Administer Dose", "Blood Rush", "Grace", "Hyper", "Hallucinogen", "Lifting", "Pyrophoric", "Exploding", "Irradiating", "Paralysing"],
+        "gangTactics": ["Thrill of the Hunt", "Long Leash", "Chem Queen", "Blade Shield", "Toxic Blood", "Three-point Landing"],
+        "skills": ["Acrobatic", "Deadly Blows", "Let's Dance", "Lightning Reflexes", "Perfect Strike", "Somersault"],
+        "territories": ["Phelynx Pen", "Bio-lab", "Wyld Den", "Rogue Las Factoria", "Chem Arena", "Shivver Den"],
+        "sideJobs": ["Chemical Reign", "Maiden, Mother, Matriarch", "Hunt Together", "Cut Off the Head", "Experimental Chem", "Murder Run"],
+        "weapons": ["Heavy Wyld Bow", "Wyld Bow", "Needle Sniper", "Repeater Needle Rifle", "Sharpened Claws", "Nox Servo-claw", "Khimerix Sting"],
+        "equipmentAndActions": ["Auto-chem", "Multi-harness", "Servo-medicae", "Auto-medicate", "Death Rites"]
+      }
+    },
+    "Goliath": {
+      "title": "Underhive Journal - Goliath: The House of Chains",
+      "file": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf",
+      "pdfPages": 52,
+      "paginationNote": "Most interior two-page spreads are duplicated on consecutive PDF pages. Index coordinates cite the first copy: printed 40-41, for example, appear first on PDF page 42 and repeat on PDF page 43.",
+      "sections": [
+        {"name": "House Goliath", "printedPages": "2-25", "pdfPages": "4-27, duplicated by spread"},
+        {"name": "Broken Chains", "printedPages": "4-8", "pdfPages": "6-11, duplicated by spread"},
+        {"name": "The Aranthian Succession", "printedPages": "9", "pdfPages": "10-11"},
+        {"name": "House Structure", "printedPages": "10-11", "pdfPages": "12-13"},
+        {"name": "Armour of the Forge", "printedPages": "12-13", "pdfPages": "14-15"},
+        {"name": "House Goliath Timeline", "printedPages": "14-15", "pdfPages": "16-17"},
+        {"name": "House Holdings", "printedPages": "16-17", "pdfPages": "18-19"},
+        {"name": "Gangs of Legend", "printedPages": "18-25", "pdfPages": "20-27, duplicated by spread"},
+        {"name": "Additional Gang Lists & Equipment", "printedPages": "26-35", "pdfPages": "28-37, duplicated by spread"},
+        {"name": "Furnace Brutes", "printedPages": "28-31", "pdfPages": "30-33"},
+        {"name": "Unborn Gangs", "printedPages": "32-35", "pdfPages": "34-37"},
+        {"name": "Fighter Profiles", "printedPages": "36-39", "pdfPages": "38-41"},
+        {"name": "Goliath Gene-Smithing", "printedPages": "40-41", "pdfPages": "42-43"},
+        {"name": "Goliath Gang Tactics and Muscle Skills", "printedPages": "42-43", "pdfPages": "44-45"},
+        {"name": "Goliath Territories", "printedPages": "44-45", "pdfPages": "46-47"},
+        {"name": "Goliath Side Jobs and Equipment Reference", "printedPages": "46-47", "pdfPages": "48-49"},
+        {"name": "Personal Equipment and Enhance Weapon", "printedPages": "48-49", "pdfPages": "50-51"}
+      ],
+      "namedEntries": {
+        "variantRules": ["Fires of the Forge", "Smiths of Renown", "Outsiders", "Master of the Forge", "Paragon of the Vats"],
+        "geneSmithing": ["Adaptive Biology", "Adaptive Mind", "Data-slug Overlay", "Iron Flesh", "Overdeveloped Musculature", "Over-engineered", "Reduced Bone Density", "Redundant Organs", "Scar Tissue", "Stimm Implant", "Survivor"],
+        "gangTactics": ["And Stay Down!", "Crunch Time", "Forgeborn", "Get 'Em!", "Force of Habit", "Ironhide"],
+        "skills": ["Fists of Steel", "Ground Pound", "Immovable Object", "Tireless Worker", "Unleash the Beast", "Unstoppable Force"],
+        "territories": ["Slug House", "Flesh-makers Theatre", "Fight Arena", "Amneo-vats", "Feasting Hall", "Badzone Smelter"],
+        "sideJobs": ["Pit Fight", "Personal Vendetta", "Wreck the Place!", "Maximum Force", "Hold the Forge!", "Prove Your Worth!"],
+        "weapons": ["Ignition Cannon", "Crucible Hooks", "Forge Axe", "Forge Hammer", "Servo-arm"],
+        "equipmentAndActions": ["Chem Slugger", "Chem Slug", "Medi Skull", "Servo-medicae", "Auto-medicate", "Enhance Weapon", "Shockwave", "Stand Firm", "Flex"]
+      }
+    }
+  }
+}

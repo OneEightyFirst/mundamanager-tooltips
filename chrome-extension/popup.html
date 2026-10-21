@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MundaMate rules</title><link rel="stylesheet" href="popup.css"><script src="popup.js" defer></script></head>
+<body>
+<header><strong>MundaMate</strong><span>1.3.0 · N26 rules</span></header>
+<main>
+<label for="search">Find a rule</label><input id="search" type="search" placeholder="Skill, equipment, action or effect…">
+<div class="filters"><select id="house" aria-label="House"><option value="">All houses</option></select><select id="category" aria-label="Rule category"><option value="">All categories</option></select></div>
+<p id="count" role="status">Loading rules…</p>
+<div id="results" aria-label="Matching rules"></div>
+<section id="detail" hidden aria-label="Rule details"><button id="back" type="button">← Back to results</button><h1 id="rule-title"></h1><p id="rule-text"></p></section>
+</main>
+<footer><span>Reference only; roster stats aren’t changed.</span><button id="coverage" type="button">Coverage</button></footer>
+</body></html>

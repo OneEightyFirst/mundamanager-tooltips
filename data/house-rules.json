@@ -1,0 +1,1187 @@
+{
+  "A Band Apart": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 35; Necromunda Additional Rules - Most Wanted, PDF p. 36; Necromunda Additional Rules - Most Wanted, PDF p. 46; Necromunda Additional Rules - Most Wanted, PDF p. 48; Necromunda Additional Rules - Most Wanted, PDF p. 53; Necromunda Skirmish - Gangs of the Underhive, PDF p. 118"
+  },
+  "A Charmed Life": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 118"
+  },
+  "A Jagerkin’s Duty": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 46"
+  },
+  "Acrobatic": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Adaptive Biology": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Adaptive Mind": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Adept of the Cult": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 36"
+  },
+  "Adina’s Champion": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 4"
+  },
+  "Administer Dose": {
+    "house": "Escher",
+    "category": "Action",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 40; PDF p. 42"
+  },
+  "Agent of Order": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 32"
+  },
+  "Agitate the Masses": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 63"
+  },
+  "Ally of House Delaque": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 56"
+  },
+  "Ally of House Goliath": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 55"
+  },
+  "Ambush Predator": {
+    "house": "The Malstrain",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 60"
+  },
+  "Aranthian-attuned": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Arthromite Whisperer": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 58"
+  },
+  "Ashwing Lure": {
+    "house": "Ash Waste Nomads",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 108"
+  },
+  "Assault Specialist": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 88"
+  },
+  "Auto-chem": {
+    "house": "Escher",
+    "category": "Equipment",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 48; PDF p. 50"
+  },
+  "Auto-medicate": {
+    "house": "Goliath",
+    "category": "Action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Automated Repair Systems": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 90"
+  },
+  "Bad Smell": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 11"
+  },
+  "Beacon of Redemption": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 26"
+  },
+  "Beast Trainer": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 62"
+  },
+  "Bi-arm": {
+    "house": "Ironhead Squats",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 92"
+  },
+  "Blessed by the Chaos Gods": {
+    "house": "Chaos Helots",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 46; Necromunda Skirmish - Gangs of the Outlands, PDF p. 50"
+  },
+  "Blessed by the Lost Saint": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 26"
+  },
+  "Blood Rush": {
+    "house": "Escher",
+    "category": "Stimm",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 40; PDF p. 42"
+  },
+  "Bodyguard": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 10; Necromunda Additional Rules - Most Wanted, PDF p. 37; Necromunda Additional Rules - Most Wanted, PDF p. 41; Necromunda Additional Rules - Most Wanted, PDF p. 43; Necromunda Additional Rules - Most Wanted, PDF p. 46; Necromunda Additional Rules - Most Wanted, PDF p. 49; Necromunda Additional Rules - Most Wanted, PDF p. 53; Necromunda Skirmish - Gangs of the Underhive, PDF p. 120; N26 FAQ and Errata September 2026"
+  },
+  "Bonded to the Rig": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 74; Necromunda Skirmish - Gangs of the Outlands, PDF p. 76"
+  },
+  "Burrowing": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 30"
+  },
+  "Call the Storm": {
+    "house": "",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 104"
+  },
+  "Charmed Companion": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 76"
+  },
+  "Chem Slug": {
+    "house": "Goliath",
+    "category": "Action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Chem Slugger": {
+    "house": "Goliath",
+    "category": "Equipment",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Chem-alchemy": {
+    "house": "Escher",
+    "category": "Chem-alchemy",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 40-41; PDF p. 42-43"
+  },
+  "Chem-alchemy Adept": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 37; PDF p. 39"
+  },
+  "Combat Chems Stash": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 6; Necromunda Skirmish - Gangs of the Underhive, PDF p. 52"
+  },
+  "Control Collar": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 51"
+  },
+  "Counter-charge": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 54"
+  },
+  "Creation of the Star Chamber": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 12"
+  },
+  "Creature of Shadows": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 12"
+  },
+  "Crucible Hooks": {
+    "house": "Goliath",
+    "category": "Weapon",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 47; PDF p. 48"
+  },
+  "Crush (Free)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "Cult of Personality": {
+    "house": "Outcasts",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 10"
+  },
+  "Cult Uprising": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 34"
+  },
+  "Custom Outrider": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 8"
+  },
+  "Data-slug Overlay": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Dauntless": {
+    "house": "Ironhead Squats",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 90"
+  },
+  "Deadly Blows": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Deadly Poisons": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 34; PDF p. 36"
+  },
+  "Dealer In Death": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 61"
+  },
+  "Death Rites": {
+    "house": "Escher",
+    "category": "Post-cycle action",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 48; PDF p. 50"
+  },
+  "Dire Premonitions": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Drudging Classes": {
+    "house": "Orlock",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 64"
+  },
+  "Early Generation Hybrid": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 36"
+  },
+  "Enhance Weapon": {
+    "house": "Goliath",
+    "category": "Post-cycle action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Enrage (Single)": {
+    "house": "Corpse Grinder Cults",
+    "category": "Action",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 110"
+  },
+  "Enveloping Attack": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 128"
+  },
+  "Envoy of the Silent Ones": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 12"
+  },
+  "Erratic Movement": {
+    "house": "Corpse Grinder Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 108"
+  },
+  "Excavation Automata": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 124"
+  },
+  "Experienced Hunter": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 74"
+  },
+  "Exploding": {
+    "house": "Escher",
+    "category": "Poison",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Extra Arm": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 34; N26 FAQ and Errata September 2026"
+  },
+  "Eyes on the Hive": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 128"
+  },
+  "Favoured of the Malstrain": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Fear Inducing": {
+    "house": "Van Saar",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 78"
+  },
+  "Feral Warrior": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 31"
+  },
+  "Finesse": {
+    "house": "Escher",
+    "category": "Skill access",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Fire Spines (Single)": {
+    "house": "Outcasts",
+    "category": "Action",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 18"
+  },
+  "Fires of the Forge": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 30; PDF p. 32"
+  },
+  "Fists of Steel": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Fixed Loadouts": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 74; Necromunda Skirmish - Gangs of the Outlands, PDF p. 76"
+  },
+  "Flex": {
+    "house": "Goliath",
+    "category": "Action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Force Blast (Free)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "Force Field (Single)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "Forge Axe": {
+    "house": "Goliath",
+    "category": "Weapon",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 47; PDF p. 48"
+  },
+  "Forge Hammer": {
+    "house": "Goliath",
+    "category": "Weapon",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 47; PDF p. 48"
+  },
+  "Frenzied": {
+    "house": "Cawdor",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 16"
+  },
+  "Friends in High Places": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 64"
+  },
+  "Friends In Low Places": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 62"
+  },
+  "From the Shadows": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 28"
+  },
+  "Furious Charge": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 52"
+  },
+  "Gene-smithing": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Ghosts of the Wastes": {
+    "house": "Ash Waste Nomads",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 104"
+  },
+  "Gifted Trader": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 118"
+  },
+  "Grace": {
+    "house": "Escher",
+    "category": "Stimm",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 40; PDF p. 42"
+  },
+  "Ground Pound": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Gun-smith": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 126"
+  },
+  "Hallucinations (Single)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "Hallucinogen": {
+    "house": "Escher",
+    "category": "Gaseous ammo",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Hard to Kill": {
+    "house": "Ash Waste Nomads",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 106"
+  },
+  "Hazardous Equipment": {
+    "house": "Orlock",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 68"
+  },
+  "Heads-up": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 61"
+  },
+  "Heavy Wyld Bow": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Heir to the Outlands": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 15"
+  },
+  "Helmawr’s Heir": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Helmawr’s Protectors": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 53"
+  },
+  "Herald of the Redemption": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 10"
+  },
+  "Homing Teleport": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Hunting Rig Augmentation": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 74"
+  },
+  "Hyper": {
+    "house": "Escher",
+    "category": "Stimm",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 40; PDF p. 42"
+  },
+  "Ignition Cannon": {
+    "house": "Goliath",
+    "category": "Weapon",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 47; PDF p. 48"
+  },
+  "Immovable Brutes": {
+    "house": "Free Ogryns",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 24"
+  },
+  "Immovable Object": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Indentured Fighter": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 42"
+  },
+  "Indentured Fighters": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 36; Necromunda Additional Rules - Most Wanted, PDF p. 40"
+  },
+  "Inspiring Oration": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 63"
+  },
+  "Investigator": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 18"
+  },
+  "Iron Flesh": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Irradiating": {
+    "house": "Escher",
+    "category": "Poison",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Jardlan Nomad Hunter": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 24"
+  },
+  "Khimerix Sting": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Kill Count": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 72"
+  },
+  "Lands on Their Feet": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 42"
+  },
+  "Las Experts": {
+    "house": "Van Saar",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 76"
+  },
+  "Last Charter Lord of Jardlan": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 23"
+  },
+  "Leash Range": {
+    "house": "Core",
+    "category": "Special rule",
+    "source": "N26 Core Rulebook, Pet / Panicked; Gangs of the Underhive, PDF pp. 42, 54"
+  },
+  "Let's Dance": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Lifting": {
+    "house": "Escher",
+    "category": "Gaseous ammo",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Lightning Reflexes": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Lord of the Fist": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 7"
+  },
+  "Loyal Protector": {
+    "house": "Orlock",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 18; Necromunda Additional Rules - Most Wanted, PDF p. 9; Necromunda Skirmish - Gangs of the Underhive, PDF p. 66"
+  },
+  "Master of the Forge": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 36-37; PDF p. 38"
+  },
+  "Master of the Hunt": {
+    "house": "",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 72"
+  },
+  "Master of Whispers": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 28"
+  },
+  "Mastery of the Immaterium": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Medi Skull": {
+    "house": "Goliath",
+    "category": "Equipment",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Medical Mechadendrites": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 29"
+  },
+  "Mind Control (Single)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "Mixed Generations": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 36"
+  },
+  "Mobile Bulwark": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 90"
+  },
+  "Multi-harness": {
+    "house": "Escher",
+    "category": "Equipment",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 48; PDF p. 50"
+  },
+  "Muscle": {
+    "house": "Goliath",
+    "category": "Skill access",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "My Little Friends": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 11"
+  },
+  "Needle Sniper": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Nimble": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 40"
+  },
+  "Nox Servo-claw": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Oculi Command": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 24"
+  },
+  "Of the Deep Wastes": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 58"
+  },
+  "Old For New": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 62"
+  },
+  "Omen of Fortune": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 4; Necromunda Skirmish - Gangs of the Outlands, PDF p. 38"
+  },
+  "Omen of Misfortune": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Orlock Road Boss": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 9"
+  },
+  "Orlock Wild Child": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 8"
+  },
+  "Out of Control": {
+    "house": "Corpse Grinder Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 108"
+  },
+  "Outlands Beast": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 128"
+  },
+  "Outsiders": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 34; PDF p. 36"
+  },
+  "Over-engineered": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Overdeveloped Musculature": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Paragon of the Vats": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 36-37; PDF p. 38"
+  },
+  "Paralysing": {
+    "house": "Escher",
+    "category": "Poison",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Pariah": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 18"
+  },
+  "Partners in the Abyss": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 16; Necromunda Additional Rules - Most Wanted, PDF p. 17"
+  },
+  "Patch-up": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 126"
+  },
+  "Perfect Strike": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Place Lure (Single)": {
+    "house": "Most Wanted",
+    "category": "Action",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 67"
+  },
+  "Poison Blood": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 5; Necromunda Skirmish - Gangs of the Underhive, PDF p. 40"
+  },
+  "Precognition": {
+    "house": "Genestealer Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 38; Necromunda Skirmish - Gangs of the Outlands, PDF p. 76"
+  },
+  "Prime Bomb Rat (Single)": {
+    "house": "Cawdor",
+    "category": "Action",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 20"
+  },
+  "Psychic Manifestation": {
+    "house": "Chaos Helots",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 50"
+  },
+  "Psychic Null": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 18; Necromunda Additional Rules - Most Wanted, PDF p. 51"
+  },
+  "Psychoteric Choir": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 28"
+  },
+  "Psychoteric Echo": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 57"
+  },
+  "Psychoteric Echo Chamber": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 12"
+  },
+  "Psychoteric Node": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 30"
+  },
+  "Psychotic Lure (Single)": {
+    "house": "Most Wanted",
+    "category": "Action",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 14"
+  },
+  "Psyniscience": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 54"
+  },
+  "Pyrophoric": {
+    "house": "Escher",
+    "category": "Gaseous ammo",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 41; PDF p. 43"
+  },
+  "Quick Draw": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 19"
+  },
+  "Rage-filled Minds": {
+    "house": "Corpse Grinder Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 106"
+  },
+  "Random Movement": {
+    "house": "Chaos Helots",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 50"
+  },
+  "Reduced Bone Density": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Redundant Organs": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Reflex Enhancers": {
+    "house": "",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120; Necromunda Skirmish - Gangs of the Outlands, PDF p. 72"
+  },
+  "Regeneration": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 42"
+  },
+  "Repeater Needle Rifle": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Restrain (Double)": {
+    "house": "Palanite Enforcers",
+    "category": "Action",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 92"
+  },
+  "Rites of the Moraegan": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 34; PDF p. 36"
+  },
+  "Rule of Iron": {
+    "house": "Orlock",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 64"
+  },
+  "Sanctioned Wyrd": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 88"
+  },
+  "Scar Tissue": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Scourge of the Spider Points": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 6"
+  },
+  "Scout Ahead": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 126"
+  },
+  "Seize the Prize": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 59"
+  },
+  "Sensor Array": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 30"
+  },
+  "Sensor Suite": {
+    "house": "Ironhead Squats",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 92"
+  },
+  "Servant of the Delaque": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 56; Necromunda Additional Rules - Most Wanted, PDF p. 57"
+  },
+  "Servant of the Escher": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 54"
+  },
+  "Servo-arm": {
+    "house": "Goliath",
+    "category": "Weapon",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 47; PDF p. 48"
+  },
+  "Servo-medicae": {
+    "house": "Escher / Goliath",
+    "category": "Equipment",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 48; PDF p. 50; Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 48; PDF p. 50"
+  },
+  "Shadow of the Malstrain": {
+    "house": "The Malstrain",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 60"
+  },
+  "Sharpened Claws": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Shockwave": {
+    "house": "Goliath",
+    "category": "Action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Slow-witted": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 124"
+  },
+  "Small Target": {
+    "house": "Ash Waste Nomads",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 106"
+  },
+  "Smiths of Renown": {
+    "house": "Goliath",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 30; PDF p. 32"
+  },
+  "Solitary Hunter": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 128"
+  },
+  "Somersault": {
+    "house": "Escher",
+    "category": "Finesse skill",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 43; PDF p. 45"
+  },
+  "Soul Hound": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 30"
+  },
+  "Spare Mount": {
+    "house": "Ash Waste Nomads",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 108"
+  },
+  "Spyrer Companion": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 76"
+  },
+  "Stand Firm": {
+    "house": "Goliath",
+    "category": "Action",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Steady Supply": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 55"
+  },
+  "Stimm Implant": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Summary Judgement": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 118"
+  },
+  "Sure-footed": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 30; PDF p. 32"
+  },
+  "Survivor": {
+    "house": "Goliath",
+    "category": "Gene-smithing",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 40-41; PDF p. 42"
+  },
+  "Sworn to the Charter": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 59"
+  },
+  "Target Paint": {
+    "house": "Ironhead Squats",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 24; Necromunda Skirmish - Gangs of the Outlands, PDF p. 94"
+  },
+  "Tenacious": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 18; Necromunda Skirmish - Gangs of the Underhive, PDF p. 88"
+  },
+  "Tend Patient": {
+    "house": "Escher",
+    "category": "Special rule",
+    "source": "Escher Journal 2026 (House of Blades), PDF p. 41"
+  },
+  "Terrify (Double)": {
+    "house": "Palanite Enforcers",
+    "category": "Wyrd power",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 94"
+  },
+  "The Finest Merchandise": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 64"
+  },
+  "The Lady of Ash": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 21"
+  },
+  "The Liber Excruciatus": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 10"
+  },
+  "The Thane’s Executioner": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 11"
+  },
+  "Threat Assessment": {
+    "house": "Spyre Hunters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 72"
+  },
+  "Tinker": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 60"
+  },
+  "Tireless Worker": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Transport Area": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 130"
+  },
+  "Unleash the Beast": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Unnatural Corpus": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 120"
+  },
+  "Unstoppable Force": {
+    "house": "Goliath",
+    "category": "Muscle skill",
+    "source": "Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf, printed p. 43; PDF p. 44"
+  },
+  "Useful Lies": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 56"
+  },
+  "Venator Gang Legacy": {
+    "house": "Venators",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 100; Necromunda Skirmish - Gangs of the Underhive, PDF p. 102"
+  },
+  "Vox Disruption": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 28"
+  },
+  "Warped Monstrosity": {
+    "house": "Corpse Grinder Cults",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 108"
+  },
+  "Wastes’ Most Wanted": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 6"
+  },
+  "Well Drilled": {
+    "house": "Palanite Enforcers",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 86"
+  },
+  "Well Fed": {
+    "house": "Supplementary fighters",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 28; Necromunda Skirmish - Gangs of the Underhive, PDF p. 126"
+  },
+  "Whispered Secrets": {
+    "house": "Most Wanted",
+    "category": "Special rule",
+    "source": "Necromunda Additional Rules - Most Wanted, PDF p. 61"
+  },
+  "Whispers in the Dark": {
+    "house": "Delaque",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 30"
+  },
+  "Words of Wrath (Single)": {
+    "house": "",
+    "category": "Action",
+    "source": "Necromunda Skirmish - Gangs of the Underhive, PDF p. 20"
+  },
+  "Wyld Bow": {
+    "house": "Escher",
+    "category": "Weapon",
+    "source": "Necromunda_Skirmish_journal_Esher_2026.pdf, printed p. 47; PDF p. 49"
+  },
+  "Xenos Abomination": {
+    "house": "The Malstrain",
+    "category": "Special rule",
+    "source": "Necromunda Skirmish - Gangs of the Outlands, PDF p. 60"
+  }
+}

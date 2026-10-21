@@ -1,0 +1,9 @@
+dist/
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+tests/*.png
+node_modules/
+__pycache__/
+.DS_Store

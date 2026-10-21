@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "MundaMate",
+  "version": "1.3.0",
+  "description": "N26 rule tooltips and searchable reference for Munda Manager.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mundamanager.com/*",
+        "https://www.mundamanager.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "rules.json",
+        "house-rules.json"
+      ],
+      "matches": [
+        "https://mundamanager.com/*",
+        "https://www.mundamanager.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "MundaMate rules",
+    "default_popup": "popup.html"
+  }
+}

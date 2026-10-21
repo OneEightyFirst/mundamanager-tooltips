@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.oneeightyfirst.mundamate'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.oneeightyfirst.mundamate'
+        minSdk 26
+        targetSdk 36
+        versionCode 5
+        versionName '1.0.4'
+    }
+
+    lint {
+        // Gradle 8.11.1 is the documented compatibility baseline for AGP 8.10.
+        disable 'AndroidGradlePluginVersion'
+    }
+}
+
+// Single source of truth: the repo's src/ and data/ folders (see ../../README.md).
+def generatedAssets = layout.buildDirectory.dir('generated/mundamateAssets')
+
+tasks.register('bundleTooltipAssets', Copy) {
+    from(file('../../src/inject.js'))
+    from(file('../../data/rules.json'))
+    into generatedAssets
+}
+
+android.sourceSets.main.assets.srcDir(generatedAssets)
+tasks.named('preBuild').configure { dependsOn 'bundleTooltipAssets' }

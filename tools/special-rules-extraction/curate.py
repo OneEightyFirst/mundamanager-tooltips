@@ -1,0 +1,19 @@
+import json,re
+p=json.load(open('paras.json'))
+INCLUDE='''Frenzied|Prime Bomb Rat (Single)|Words of Wrath (Single)|Psychoteric Choir|Master of Whispers|From the Shadows|Whispers in the Dark|Sensor Array|Psychoteric Node|Burrowing|Nimble|Poison Blood|Regeneration|Lands on Their Feet|Furious Charge|Combat Chems Stash|Counter-charge|Drudging Classes|Rule of Iron|Loyal Protector|Hazardous Equipment|Las Experts|Fear Inducing|Well Drilled|Assault Specialist|Sanctioned Wyrd|Tenacious|Automated Repair Systems|Mobile Bulwark|Restrain (Double)|Mind Control (Single)|Terrify (Double)|Hallucinations (Single)|Crush (Free)|Force Field (Single)|Force Blast (Free)|Venator Gang Legacy|Rage-filled Minds|Warped Monstrosity|Erratic Movement|Out of Control|Enrage (Single)|Summary Judgement|A Band Apart|Bodyguard|Excavation Automata|Slow-witted|Eyes on the Hive|Outlands Beast|Solitary Hunter|Enveloping Attack|Patch-up|Gun-smith|Scout Ahead|Well Fed|Cult of Personality|Fire Spines (Single)|Immovable Brutes|Cult Uprising|Extra Arm|Adept of the Cult|Early Generation Hybrid|Mixed Generations|Omen of Fortune|Precognition|Blessed by the Chaos Gods|Psychic Manifestation|Random Movement|Ambush Predator|Xenos Abomination|Shadow of the Malstrain|Kill Count|Threat Assessment|Hunting Rig Augmentation|Experienced Hunter|Bonded to the Rig|Fixed Loadouts|Spyrer Companion|Charmed Companion|Master of the Hunt|Reflex Enhancers|Dauntless|Sensor Suite|Bi-arm|Target Paint|Ghosts of the Wastes|Hard to Kill|Small Target|Spare Mount|Ashwing Lure|Call the Storm|A Charmed Life|Outcast Leader|Gifted Trader|Outcast Champion|Mastery of the lmmaterium|Omen of Misfortune|Dire Premonitions|Unnatural Corpus|Aranthian-attuned|Homing Teleport|Helmawr's Heir|Favoured of the Malstrain|Transport Area|Tend Patient|Adina’s Champion|Death-Maiden|Scourge of the Spider Points|Wastes’ Most Wanted|Lord of the Fist|Orlock Wild Child|Custom Outrider|Orlock Road Boss|Herald of the Redemption|The Liber Excruciatus|The Thane’s Executioner|Bad Smell|My Little Friends|Envoy of the Silent Ones|Creature of Shadows|Creation of the Star Chamber|Psychoteric Echo Chamber|Psychotic Lure (Single)|Heir to the Outlands|Partners in the Abyss|Investigator|Psychic Null|Pariah|Quick Draw|The Lady of Ash|Last Charter Lord of Jardlan|Jardlan Nomad Hunter|Oculi Command|Blessed by the Lost Saint|Beacon of Redemption|Vox Disruption|Medical Mechadendrites|Soul Hound|Feral Warrior|Agent of Order|Control Collar|Psyniscience|Servant of the Escher|Ally of House Goliath|Steady Supply|Ally of House Delaque|Useful Lies|Servant of the Delaque|Psychoteric Echo|Arthromite Whisperer|Of the Deep Wastes|Seize the Prize|Sworn to the Charter|Tinker|Dealer In Death|Whispered Secrets|Heads-up|Beast Trainer|Friends In Low Places|Old For New|Inspiring Oration|Agitate the Masses|Friends in High Places|The Finest Merchandise|A Jagerkin’s Duty|Indentured Fighter|Indentured Fighters|Helmawr’s Protectors|Place Lure (Single)'''.split('|')
+BOOK={'UH':'Necromunda Skirmish - Gangs of the Underhive.pdf','OL':'Necromunda Skirmish - Gangs of the Outlands.pdf','MW':'necromunda_additional_rules_mostwanted.pdf','EJ':'Necromunda_Skirmish_journal_Esher_2026.pdf','GJ':'Necromunda Skirmish 2026 House of Chains - Goliath Journal.pdf'}
+out={}
+for n in INCLUDE:
+    occ=[x for x in p if x['name']==n]
+    if not occ: print('NOT FOUND',n); continue
+    # distinct texts
+    texts=[]
+    for x in occ:
+        if x['text'] not in [t['text'] for t in texts]: texts.append(x)
+    out[n]=texts
+json.dump(out,open('curated.json','w'),indent=1)
+bad=[(n,v[0]['page'],v[0]['text'][-60:]) for n,v in out.items() if not re.search(r'[.!)”"]\s*$',v[0]['text'])]
+print(len(out),'curated;',len(bad),'look truncated')
+for b in bad: print(b)
+multi=[(n,len(v)) for n,v in out.items() if len(v)>1]
+print('multi-variant:',multi)
