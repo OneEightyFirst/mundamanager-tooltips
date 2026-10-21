@@ -52,3 +52,11 @@ Entries added in 1.3.0 are verbatim from the books, with `(Source: book, PDF p. 
 - 1.2.0 (Oct 19 2026): bookmarklet rebuilt on 184 N26 rules, searchable "Rules · N26" library.
 - 1.1.1 (Sep 7 2026): Chrome popup crash fix, weapon profile tables.
 - Android 1.0.3 (Aug 15 2026): first WebView wrapper build.
+
+## Downloading the Android app
+
+Run `scripts/release-android.sh` on the Mac (builds, copies the APK to `releases/`, commits), then `git push origin main`. On the phone, open:
+
+https://oneeightyfirst.github.io/mundamanager-tooltips/releases/MundaMate-latest.apk
+
+Android asks once to allow installs from the browser. Always build on the same Mac: Android only updates the installed app if the new APK is signed with the same key (the Mac's `~/.android/debug.keystore`).
